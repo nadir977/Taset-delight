@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=,initial-scale=1.0" />
+    <title>Tasty Delight</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <section class="main_section">
+      <div class="notification">
+        <h1>
+          Enjoy a delicious meal with us and get 20% off your total bill this
+          New year!
+        </h1>
+      </div>
+
+      <nav>
+        <div class="nav_div1">
+          <h3>Home</h3>
+          <h4>Menu</h4>
+          <p>Gallery</p>
+          <p>Memberships</p>
+          <p>Contact</p>
+        </div>
+        <div class="nav_div2">
+          <div class="socel_icon">
+            <img src="./assets/facebook.png" />
+            <img src="./assets/social.png" />
+            <img src="./assets/whatsapp.png" />
+          </div>
+          <button>Reservation</button>
+        </div>
+      </nav>
+
+      <div class="hero">
+        <h4>Luxury & Freshness</h4>
+        <h1>The Pleasure of <span> Tasty</span> Delight</h1>
+        <p>
+          Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit <br />
+          interdum, ac aliquet odio mattis. Class aptent taciti sociosqu.
+        </p>
+        <button>Reservation</button>
+      </div>
+
+      <div class="video-container" id="videoContainer">
+        <video id="myVideo" poster="thumbnail.jpg">
+          <source src="./assets/Food_Promo_video.mp4" type="video/mp4" />
+        </video>
+        <button class="custom-play-button" id="playButton"></button>
+      </div>
+
+      <div class="main_Achievements">
+        <div class="Achievements">
+          <img src="./assets/hand-drawn-hungry-emoji-illustration 1.png" />
+          <h1>4000+</h1>
+          <p>Happy Customers</p>
+        </div>
+        <div class="Achievements">
+          <img
+            src="./assets/[freepicdownloader.com]-fork-is-plate-with-fork-middle-large-Photoroom 1.png"
+          />
+          <h1>100+</h1>
+          <p>Dishes Served Daily</p>
+        </div>
+        <div class="Achievements">
+          <img src="./assets/2601.png" />
+          <h1>25+</h1>
+          <p>Years of Excellence</p>
+        </div>
+        <div class="Achievements">
+          <img
+            src="./assets/yellow_trophy_cup_winner_success_champion_icon_sign_or_symbol_3d_illustration 1.png"
+          />
+          <h1>50+</h1>
+          <p>Award-Winning Recipes</p>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header">
+          <img src="assets/vector.png" />
+          <div>
+            <p>Our menu</p>
+            <h2>Our Special <span>Dishes</span></h2>
+          </div>
+          <button class="menu-btn">Our Menu</button>
+        </div>
+
+        <div class="slider-wrapper">
+          <div class="slider" id="slider">
+            <!-- 6 images repeated 3x -->
+            <!-- 18 total cards for infinite feel -->
+            <script>
+              const images = [
+                {
+                  src: "./assets/leaf_pasta.png",
+                  title: "Pasta with Green Leaf",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+                {
+                  src: "./assets/pasta_tomato.png",
+                  title: "Pasta with Tomato",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+                {
+                  src: "./assets/spaghettis_pasta.png",
+                  title: "Spaghetti with Beans",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+                {
+                  src: "assets/chicken_pasta.png",
+                  title: "Chicken Olive Pasta",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+                {
+                  src: "./assets/leaf_pasta.png",
+                  title: "Cheesy Cream Pasta",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+                {
+                  src: "./assets/pasta_tomato.png",
+                  title: "Mushroom Alfredo",
+                  desc: "Lorem ipsum dolor sit amet consectetur. Mauris neque aliquam pretium arcu. Facilisi laoreet eget .",
+                },
+              ];
+              const slider = document.currentScript.parentElement;
+              for (let i = 0; i < 3; i++) {
+                for (let img of images) {
+                  const slide = document.createElement("div");
+                  slide.className = "slide";
+                  slide.innerHTML = `
+              <img src="${img.src}" alt="${img.title}" />
+              <h3>${img.title}</h3>
+              <p>${img.desc}</p>
+            `;
+                  slider.appendChild(slide);
+                }
+              }
+            </script>
+          </div>
+        </div>
+
+        <div class="nav-buttons">
+          <img src="./assets/vector2.png" />
+          <div class="slider_btn">
+            <button onclick="slideLeft()">
+              <i class="bi bi-arrow-left"></i>
+            </button>
+            <button onclick="slideRight()">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          <img src="./assets/vector3.png" />
+        </div>
+      </div>
+
+      <div class="main_Reservation">
+        <div class="Reservation_img1"><img src="./assets/Rectangle.png" /></div>
+        <div class="Reservation_img2">
+          <img src="./assets/Rectangle2.png" />
+        </div>
+        <div class="Opening">
+          <p>Opening hours</p>
+          <h1>Restaurant <span>Opening Hours</span></h1>
+          <div class="main_taiming">
+            <div class="taime">
+              <h2>Monday - Friday</h2>
+              <p>12:00 - 14:45</p>
+            </div>
+            <div class="taime_center">
+              <h2>Saturday</h2>
+              <p>12:00 - 14:45</p>
+            </div>
+            <div class="taime">
+              <h2>Sunday</h2>
+              <p>12:00 - 14:45</p>
+            </div>
+          </div>
+          <button>Reservation</button>
+        </div>
+      </div>
+
+      <div class="Awards_div">
+        <h3>Our Progress</h3>
+        <h1>Victory <span>Awards</span></h1>
+        <p>
+          We restaurant has won several prestigious awards.  Some of the most
+          noticeable ones include: OpenTable Diner's Choice Award (2015, 2016),
+          Italian Speciality <br />
+          Chef Award (2016) and WHAT'S ON Award for Dubai Favourite Seafood
+          Restaurant (2014, 2016). <br />
+            BiCE Mare has recently been nominated for the Luxury Travel Guide
+          Restaurant Award for 2017.
+        </p>
+        <div class="img_Awards">
+          <img src="./assets/Awards1.png" />
+          <img src="./assets/Awards2.png" />
+          <img src="./assets/Awards3.png" />
+          <img src="./assets/Awards4.png" />
+          <img src="./assets/Awards5.png" />
+          <img src="./assets/Awards6.png" />
+          <img src="./assets/Awards7.png" />
+          <img src="./assets/Awards8.png" />
+        </div>
+      </div>
+
+      <div class="main_Dishes">
+        <p>Our Gallery</p>
+        <h1>A Taste of Perfection Explore <span>Our Dishes</span></h1>
+        <div class="Dishes_img">
+          <div class="Dishes_1">
+            <img src="./assets/Dishes1.png" />
+            <img src="./assets/Dishes2.png" />
+            <img src="./assets/Dishes3.png" />
+          </div>
+          <div class="Dishes_1">
+            <img src="./assets/Dishes4.png" />
+            <img src="./assets/Dishes5.png" />
+            <img src="./assets/Dishes6.png" />
+          </div>
+        </div>
+        <button>View More</button>
+      </div>
+
+      <div class="Testiminials_div">
+        <img src="./assets/Group_background2.png" />
+        <div>
+          <p>Testiminials</p>
+          <h1>Our Happy <span>Clients</span></h1>
+        </div>
+        <img src="./assets/Group_backgruonnd.png" />
+      </div>
+
+      <div class="main_slider">
+        <swiper-container
+          class="mySwiper"
+          pagination="true"
+          pagination-clickable="true"
+          space-between="30"
+          slides-per-view="3"
+          loop="true"
+          autoplay="true"
+        >
+          <swiper-slide>
+            <div class="slide_div">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="hp">
+                <h1>Great Fast Reliable Service</h1>
+                <p>
+                  Request money from friends and family around the world.Whether
+                  you're sending or receiving international payments, you're
+                  always getting the best rates via our partners, up to 3x
+                  cheaper than the banks.
+                </p>
+              </div>
+              <div class="slide_imd">
+                <img src="./assets/Ellipse.png" />
+                <div>
+                  <h1>Ama Ampomah</h1>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide_div">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="hp">
+                <h1>Great Fast Reliable Service</h1>
+                <p>
+                  Request money from friends and family around the world.Whether
+                  you're sending or receiving international payments, you're
+                  always getting the best rates via our partners, up to 3x
+                  cheaper than the banks.
+                </p>
+              </div>
+              <div class="slide_imd">
+                <img src="./assets/Ellipse2.png" width="70px" />
+                <div>
+                  <h1>Aspen Press</h1>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide_div">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="hp">
+                <h1>Great Fast Reliable Service</h1>
+                <p>
+                  Request money from friends and family around the world.Whether
+                  you're sending or receiving international payments, you're
+                  always getting the best rates via our partners, up to 3x
+                  cheaper than the banks.
+                </p>
+              </div>
+              <div class="slide_imd">
+                <img src="./assets/Ellipse.png" />
+                <div>
+                  <h1>Aspen Press</h1>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide>
+            <div class="slide_div">
+              <div>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <div class="hp">
+                <h1>Great Fast Reliable Service</h1>
+                <p>
+                  Request money from friends and family around the world.Whether
+                  you're sending or receiving international payments, you're
+                  always getting the best rates via our partners, up to 3x
+                  cheaper than the banks.
+                </p>
+              </div>
+              <div class="slide_imd">
+                <img src="./assets/Ellipse2.png" width="70px" />
+                <div>
+                  <h1>Aspen Press</h1>
+                  <p>Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+
+      <div class="main_Questions">
+        <div class="Questions_1">
+          <h4>Our FAQs</h4>
+          <h1>
+            Common Questions &
+            <span
+              >Helpful <br />
+              Answers</span
+            >
+          </h1>
+          <p>
+            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc <br />
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            <br />
+            aptent taciti sociosqu.
+          </p>
+          <button>Explore More</button>
+        </div>
+        <div class="Questions_2">
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">
+                What are your opening hours?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Our restaurant is open from 11:00 AM to 10:00 PM, Monday through
+                Sunday. During holidays, our hours may vary, so please check our
+                website or call us for specific holiday hours.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Do you offer takeout or delivery services?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Yes, we offer both takeout and delivery options.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Do you have vegetarian or vegan options?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Absolutely! We offer a variety of vegetarian and vegan dishes.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Do you have parking available?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Yes, we have free parking for our customers.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Do you take reservations?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Yes, we recommend booking in advance for weekends.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <div class="accordion-header">
+                Are pets allowed?
+                <span class="accordion-icon">⌄</span>
+              </div>
+              <div class="accordion-content">
+                Pets are welcome in our outdoor seating area.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="notification">
+        <h1>Copyright 2025, All Rights Reserved</h1>
+      </div>
+    </section>
+    <script>
+      const items = document.querySelectorAll(".accordion-item");
+
+      items.forEach((item) => {
+        const header = item.querySelector(".accordion-header");
+
+        header.addEventListener("click", () => {
+          const isActive = item.classList.contains("active");
+
+          items.forEach((i) => i.classList.remove("active"));
+          if (!isActive) {
+            item.classList.add("active");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      const sliderEl = document.getElementById("slider");
+      const scrollStep = 280;
+
+      function slideLeft() {
+        if (sliderEl.scrollLeft <= 0) {
+          sliderEl.scrollLeft = sliderEl.scrollWidth / 3; // Jump to middle set
+        }
+        sliderEl.scrollBy({ left: -scrollStep, behavior: "smooth" });
+      }
+
+      function slideRight() {
+        if (
+          sliderEl.scrollLeft + sliderEl.offsetWidth >=
+          sliderEl.scrollWidth
+        ) {
+          sliderEl.scrollLeft = sliderEl.scrollWidth / 3; // Reset to middle set
+        }
+        sliderEl.scrollBy({ left: scrollStep, behavior: "smooth" });
+      }
+
+      // Start from middle set for seamless loop feel
+      window.onload = () => {
+        sliderEl.scrollLeft = sliderEl.scrollWidth / 3;
+      };
+
+      const video = document.getElementById("myVideo");
+      const playButton = document.getElementById("playButton");
+      const videoContainer = document.getElementById("videoContainer");
+
+      playButton.addEventListener("click", function () {
+        video.play();
+        videoContainer.classList.add("playing");
+      });
+
+      video.addEventListener("pause", function () {
+        videoContainer.classList.remove("playing");
+      });
+
+      video.addEventListener("ended", function () {
+        videoContainer.classList.remove("playing");
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>

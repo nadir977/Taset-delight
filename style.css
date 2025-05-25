@@ -1,0 +1,684 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+.main_section {
+  max-width: 1600px;
+  margin: auto;
+}
+.notification {
+  padding: 5px 10px;
+  background: rgba(229, 5, 18, 1);
+  display: flex;
+  justify-content: center;
+}
+.notification h1 {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 4rem;
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+}
+
+.nav_div1 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.nav_div1 h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(32, 32, 32, 1);
+  cursor: pointer;
+}
+.nav_div2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.socel_icon img {
+  width: 24px;
+  cursor: pointer;
+}
+.nav_div1 h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+  cursor: pointer;
+}
+.nav_div1 p {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+  cursor: pointer;
+}
+.socel_icon {
+  display: flex;
+  gap: 10px;
+}
+.nav_div2 button {
+  padding: 10px 20px;
+  border: 1px solid rgba(229, 5, 18, 1);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(32, 32, 32, 1);
+  background: transparent;
+  cursor: pointer;
+}
+.nav_div2 button:hover {
+  padding: 10px 20px;
+  border: 1px solid rgba(229, 5, 18, 1);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+  background: rgba(229, 5, 18, 1);
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 1rem;
+}
+.hero h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+.hero h1 {
+  font-weight: 300;
+  font-size: 60px;
+  color: rgba(32, 32, 32, 1);
+}
+.hero span {
+  font-weight: 300;
+  font-size: 60px;
+  color: rgba(229, 5, 18, 1);
+}
+.hero p {
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(121, 121, 121, 1);
+}
+.hero button {
+  padding: 10px 20px;
+  border: 1px solid rgba(229, 5, 18, 1);
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(229, 5, 18, 1);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin: auto;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.custom-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 2rem;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.custom-play-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  border-style: solid;
+  border-width: 20px 0 20px 30px;
+  border-color: transparent transparent transparent white;
+}
+
+.video-container.playing .custom-play-button {
+  display: none;
+}
+
+.custom-play-button.play-pause-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+.custom-play-button:hover .play-pause-btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.main_Achievements {
+  display: flex;
+  justify-content: space-around;
+  margin: 7rem 0;
+  border-top: 1px solid rgba(210, 210, 210, 1);
+  border-bottom: 1px solid rgba(210, 210, 210, 1);
+  padding: 4rem 8rem;
+}
+
+.Achievements {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  border-right: 1px solid rgba(121, 121, 121, 1);
+}
+.Achievements h1 {
+  font-weight: 400;
+  font-size: 42px;
+  color: rgba(32, 32, 32, 1);
+}
+.Achievements p {
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+
+.container {
+  background: rgba(32, 32, 32, 1);
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 260px;
+  gap: 25rem;
+}
+
+.header h2 {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  font-size: 36px;
+}
+
+.header h2 span {
+  font-weight: 400;
+  color: rgba(229, 5, 18, 1);
+  font-size: 36px;
+}
+.header p {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(210, 210, 210, 1);
+}
+
+.menu-btn {
+  background: red;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  margin-right: 4rem;
+}
+
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  max-width: 260px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 20px;
+  margin-right: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.slide h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 10px;
+}
+
+.slide p {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(210, 210, 210, 1);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 220px;
+}
+
+.nav-buttons button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  font-size: 30px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: transparent;
+  color: red;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-buttons button:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+.slider_btn {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 26px;
+  }
+
+  .container {
+    padding: 30px 20px;
+  }
+
+  .slide {
+    min-width: 220px;
+  }
+}
+
+.main_Reservation {
+  padding: 3rem;
+  border: 1px solid rgba(210, 210, 210, 1);
+  border-radius: 20px;
+  margin: 6rem 0;
+  display: flex;
+  gap: 20px;
+  margin: 13rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Opening p {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+.Opening h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: Black;
+}
+.Opening h1 span {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(229, 5, 18, 1);
+}
+.main_taiming {
+  display: flex;
+  padding: 15px 0;
+}
+.taime h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(32, 32, 32, 1);
+}
+.taime p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(121, 121, 121, 1);
+}
+.taime {
+  padding: 10px 40px 10px 0;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.Opening {
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Opening button {
+  background: red;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  max-width: 158px;
+  margin-top: 30px;
+}
+.taime_center h2 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(32, 32, 32, 1);
+}
+.taime_center p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(121, 121, 121, 1);
+}
+.taime_center {
+  padding: 10px 40px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(210, 210, 210, 1);
+  border-left: 1px solid rgba(210, 210, 210, 1);
+  margin-right: 40px;
+}
+.Reservation_img1 {
+  margin-bottom: -12rem;
+}
+.Reservation_img2 {
+  margin-top: -12rem;
+}
+.Awards_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.img_Awards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 3rem 0;
+}
+.Awards_div h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+.Awards_div h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(32, 32, 32, 1);
+}
+.Awards_div h1 span {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(229, 5, 18, 1);
+}
+.Awards_div p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(121, 121, 121, 1);
+}
+.main_Dishes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.Dishes_img {
+  margin-top: 2.5rem;
+}
+.Dishes_1 {
+  margin: 1rem 0;
+  display: flex;
+  gap: 10px;
+}
+.main_Dishes p {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+.main_Dishes h1 {
+  font-weight: 500;
+  font-size: 42px;
+  color: rgba(32, 32, 32, 1);
+}
+.main_Dishes h1 span {
+  font-weight: 500;
+  font-size: 42px;
+  color: rgba(229, 5, 18, 1);
+}
+.main_Dishes button {
+  background: red;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  max-width: 158px;
+  margin-top: 30px;
+}
+
+.Testiminials_div p {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+
+.Testiminials_div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.Testiminials_div h1 {
+  font-weight: 500;
+  font-size: 42px;
+  color: rgba(32, 32, 32, 1);
+}
+.Testiminials_div h1 span {
+  font-weight: 500;
+  font-size: 42px;
+  color: rgba(229, 5, 18, 1);
+}
+
+.main_slider {
+  margin: 5rem 0;
+}
+
+.bi-star-fill {
+  color: rgba(228, 171, 25, 1);
+}
+
+.slide_div {
+  padding: 1.5rem;
+  border-radius: 30px;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: 70px;
+  box-shadow: 2px 3.46px 10px 0px rgba(44, 65, 90, 0.15);
+  background: rgba(32, 32, 32, 1);
+  margin: 10px 0 3rem 0;
+}
+.slide_div h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31.2px;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 5px;
+}
+.slide_div p {
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 1);
+}
+.slide_imd {
+  display: flex;
+  color: rgba(255, 255, 255, 1);
+  align-items: center;
+  gap: 10px;
+}
+.slide_imd p {
+  line-height: 10px;
+  font-size: 14px;
+}
+.slide_imd h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.hp {
+  margin: 1.4rem 0;
+}
+.img_Awards img {
+  max-height: 100px;
+}
+
+.accordion {
+  border-top: 1px solid #ccc;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  color: rgba(32, 32, 32, 1);
+  cursor: pointer;
+  padding: 20px 0;
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-content {
+  padding: 0 15px 15px;
+  display: none;
+  color: rgba(121, 121, 121, 1);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.main_Questions {
+  display: flex;
+  justify-content: space-around;
+  margin: 7rem 0;
+}
+.Questions_2 {
+  width: 50%;
+}
+
+.Questions_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.Questions_1 h4 {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgba(121, 121, 121, 1);
+}
+
+.Questions_1 h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(32, 32, 32, 1);
+  line-height: 120%;
+}
+.Questions_1 h1 span {
+  font-weight: 500;
+  font-size: 40px;
+  color: rgba(229, 5, 18, 1);
+}
+.Questions_1 p {
+  font-weight: 400;
+  font-size: 18px;
+  color: rgba(121, 121, 121, 1);
+}
+
+.Questions_1 button {
+  background: red;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+  max-width: 158px;
+}
